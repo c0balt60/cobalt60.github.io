@@ -1,0 +1,31 @@
+---
+import Container from "../components/Container.astro";
+import Layout from "../layouts/Layout.astro";
+import warningImage from "assets/warning.png"
+---
+
+<Layout title="404 Not Found">
+  <Container>
+    <div class="min-h-[calc(100vh-16rem)] flex items-center justify-center">
+      <div class="mt-16 text-center">
+
+        <defs>
+            <linearGradient
+                id="paint0_linear_1805_24383"
+                x1="247.358"
+                y1="0"
+                x2="247.358"
+                y2="622.479"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop stop-opacity="0.9"></stop>
+                <stop offset="1" stop-opacity="0.2"></stop>
+            </linearGradient>
+        </defs>
+
+        <h1 class="text-gradient text-4xl lg:text-5xl font-bold"><span class="text-gradient">404</span></h1>
+        <p class="text-lg mt-4 text-slate-600">Page not found.</p>
+      </div>
+    </div>
+  </Container>
+</Layout>

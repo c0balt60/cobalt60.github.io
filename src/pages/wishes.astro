@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="What's good">
+<Layout title="Wishes for bro">
 	<main>
 			<defs>
 				<linearGradient
@@ -19,24 +19,14 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 
-		<h1>Happy Birthday <span class="text-gradient">Ivan</span></h1>
+		<h1>Happy Birthday <span class="text-gradient">Ivan 🎂</span></h1>
 		<p class="instructions">
-			While building this website, I only had <code>23 build errors</code> and <code>48 deployement failiures</code>.<br />
-			<strong>Fortunately</strong> I am making this for you, so I figured it out somehow
+			<span class="text-gradient">Happy Birthday</span> bro </br>
+            May your <span class="text-gradient">code</span> always compile on the first try; </br>
+            and may your programming skills reach new heights 😉
 		</p>
 
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="/wishes"
-				title="Wishes"
-				body="Birthday Wishes for you bro 😉"
-			/>
-			<Card
-				href="https://github.com/c0balt60/cobalt60.github.io"
-				title="Source Code"
-				body="If you want to see my garbadge code 💯🔥"
-			/>
-		</ul>
+		
 	</main>
 </Layout>
 
@@ -73,6 +63,37 @@ import Card from '../components/Card.astro';
 		background-size: 400%;
 		background-position: 0%;
 	}
+
+
+    h1 {
+        text-color: linear-gradient(5deg, #6c00ff, #ae73ff, #73a6ff);
+        background-size: 600% 600%;
+
+        -webkit-animation: gradient 30s ease infinite;
+        -moz-animation: gradient 30s ease infinite;
+        animation: gradient 30s ease infinite;
+    }
+
+    @-webkit-keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes gradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+
+
+
+
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
